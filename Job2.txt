@@ -1,0 +1,13 @@
+In this Jenkins job for testing Node.js applications and server environments, the vi editor is utilized to efficiently edit configuration files, shell scripts, and test automation code directly within the build environment.
+
+The job includes:
+
+Setup & Configuration: Using the vi editor, developers can modify key test scripts (e.g., .sh, .js, or .json files) and configuration files (e.g., .env) during the Jenkins pipeline execution.
+
+Integration with Node.js Testing: The pipeline tests are integrated with Node.js test suites (such as Jest, Mocha, or other testing frameworks), which may require on-the-fly modifications. The vi editor ensures developers can quickly apply changes to test scripts in the terminal before running them.
+
+Server Setup and Verification: Server configuration files (e.g., NGINX, Apache, or custom Node.js server settings) can also be modified using vi to ensure server-side test scenarios are correctly set up for execution.
+
+Terminal-based Editing: Since the Jenkins environment typically runs in headless mode, vi is an ideal text editor for working within the build agent's terminal without requiring a GUI.
+
+By using the vi editor in this job, we ensure seamless integration between code editing and test execution, enabling developers to make real-time adjustments and verifications within the Jenkins pipeline.
