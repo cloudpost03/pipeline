@@ -1,0 +1,22 @@
+A **webhook** is a method used to allow one system to send real-time data to another system when an event occurs. It’s a way for web services to automatically send data or notifications to other services without needing to make periodic requests or polling for updates. 
+
+Here’s a more detailed explanation:
+
+### Key Points of Webhooks:
+- **Event-driven**: Webhooks are triggered by specific events, such as a form submission, a file upload, or a code push to a repository.
+  
+- **Real-time**: As soon as the triggering event happens, the webhook sends data immediately, allowing for real-time communication between systems.
+  
+- **Data Push**: Unlike traditional APIs where one system has to request data (i.e., "pull" data), webhooks "push" data from the source system to the target system. The data is usually sent as an HTTP POST request.
+
+- **Target URL**: A webhook requires a designated URL (endpoint) on the receiving system where the event data will be sent. This URL must be set up to listen for incoming webhook requests and process them.
+
+- **Use Case Examples**:
+  - **Payment Processing**: After a payment is completed, a webhook might be used to notify an e-commerce site to update the order status.
+  - **Continuous Integration (CI)**: Tools like Jenkins, GitHub, or Bitbucket use webhooks to trigger builds or deployments when new code is pushed to a repository.
+  - **Notification Systems**: Chat systems like Slack or Discord use webhooks to send messages or alerts automatically when certain actions occur, such as a new task being assigned in a project management tool.
+
+### Example:
+When a user pushes code to a GitHub repository, a webhook can be triggered to notify a CI/CD tool (like Jenkins) to start building the project. The GitHub server sends an HTTP POST request to the specified Jenkins webhook URL with the relevant payload (e.g., information about the commit).
+
+Webhooks are highly efficient and essential in building real-time, automated workflows across different services and platforms.
