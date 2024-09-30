@@ -1,0 +1,10 @@
+When a user pushes code to a GitHub repository, a webhook can be triggered to notify a CI/CD tool (like Jenkins) to start building the project. The GitHub server sends an HTTP POST request to the specified Jenkins webhook URL with the relevant payload (e.g., information about the commit).
+
+Webhooks are highly efficient and essential in building real-time, automated workflows across different services and platforms.
+
+
+
+
+
+
+
